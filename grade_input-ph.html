@@ -251,7 +251,7 @@
       <div class="sel-row">
         <div class="sel-group">
           <label>지역</label>
-          <select id="sel-region" onchange="onRegion(this.value)"><option value="">선택하세요</option><option value="평택시">평택시</option></select>
+          <select id="sel-region" onchange="onRegion(this.value)"><option value="">선택하세요</option><option value="대전광역시 서구 (관저권역)">대전광역시 서구 (관저권역)</option></select>
         </div>
         <div class="sel-group">
           <label>학교</label>
@@ -284,14 +284,14 @@
 
   <!-- 학교 목록·편집 -->
   <div id="pane-list" style="display: block;"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;">
-    <span style="font-size:13px;color:var(--muted);">총 1개 지역 · 18개교</span>
+    <span style="font-size:13px;color:var(--muted);">총 1개 지역 · 5개교</span>
     <button class="btn-add-region" onclick="openAddRegion()">＋ 지역 추가</button>
   </div><div class="list-card">
       <div class="list-region-hdr">
-        <span class="region-name">평택시 (18개교)</span>
+        <span class="region-name">대전광역시 서구 (관저권역) (5개교)</span>
         <div class="region-acts">
-          <button class="btn btn-add" onclick="openAddSchool(decodeURIComponent('%ED%8F%89%ED%83%9D%EC%8B%9C'))">＋ 학교 추가</button>
-          <button class="btn btn-del-region" onclick="deleteRegion(decodeURIComponent('%ED%8F%89%ED%83%9D%EC%8B%9C'))">지역 삭제</button>
+          <button class="btn btn-add" onclick="openAddSchool(decodeURIComponent('%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%84%9C%EA%B5%AC%20(%EA%B4%80%EC%A0%80%EA%B6%8C%EC%97%AD)'))">＋ 학교 추가</button>
+          <button class="btn btn-del-region" onclick="deleteRegion(decodeURIComponent('%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%84%9C%EA%B5%AC%20(%EA%B4%80%EC%A0%80%EA%B6%8C%EC%97%AD)'))">지역 삭제</button>
         </div>
       </div>
       <table class="list-table">
@@ -300,148 +300,44 @@
           <th class="r">3학년</th><th>상태</th><th></th>
         </tr></thead>
         <tbody><tr>
-        <td>평택고등학교</td>
-        <td class="r"><b>308</b></td><td class="r"><b>292</b></td><td class="r"><b>305</b></td>
+        <td>관저고등학교</td>
+        <td class="r"><b>232</b></td><td class="r"><b>213</b></td><td class="r"><b>226</b></td>
         <td><span class="sdot dot-ok"></span><span style="color:#16a34a;font-size:11px">완료</span></td>
         <td><div class="act-cell">
-          <button class="btn btn-edit" onclick="openEdit(decodeURIComponent('%ED%8F%89%ED%83%9D%EC%8B%9C'),decodeURIComponent('%ED%8F%89%ED%83%9D%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90'))">수정</button>
-          <button class="btn btn-del" onclick="deleteSchool(decodeURIComponent('%ED%8F%89%ED%83%9D%EC%8B%9C'),decodeURIComponent('%ED%8F%89%ED%83%9D%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90'))">삭제</button>
+          <button class="btn btn-edit" onclick="openEdit(decodeURIComponent('%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%84%9C%EA%B5%AC%20(%EA%B4%80%EC%A0%80%EA%B6%8C%EC%97%AD)'),decodeURIComponent('%EA%B4%80%EC%A0%80%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90'))">수정</button>
+          <button class="btn btn-del" onclick="deleteSchool(decodeURIComponent('%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%84%9C%EA%B5%AC%20(%EA%B4%80%EC%A0%80%EA%B6%8C%EC%97%AD)'),decodeURIComponent('%EA%B4%80%EC%A0%80%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90'))">삭제</button>
         </div></td>
       </tr><tr>
-        <td>비전고등학교</td>
-        <td class="r"><b>323</b></td><td class="r"><b>321</b></td><td class="r"><b>323</b></td>
+        <td>동방고등학교</td>
+        <td class="r"><b>262</b></td><td class="r"><b>242</b></td><td class="r"><b>259</b></td>
         <td><span class="sdot dot-ok"></span><span style="color:#16a34a;font-size:11px">완료</span></td>
         <td><div class="act-cell">
-          <button class="btn btn-edit" onclick="openEdit(decodeURIComponent('%ED%8F%89%ED%83%9D%EC%8B%9C'),decodeURIComponent('%EB%B9%84%EC%A0%84%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90'))">수정</button>
-          <button class="btn btn-del" onclick="deleteSchool(decodeURIComponent('%ED%8F%89%ED%83%9D%EC%8B%9C'),decodeURIComponent('%EB%B9%84%EC%A0%84%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90'))">삭제</button>
+          <button class="btn btn-edit" onclick="openEdit(decodeURIComponent('%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%84%9C%EA%B5%AC%20(%EA%B4%80%EC%A0%80%EA%B6%8C%EC%97%AD)'),decodeURIComponent('%EB%8F%99%EB%B0%A9%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90'))">수정</button>
+          <button class="btn btn-del" onclick="deleteSchool(decodeURIComponent('%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%84%9C%EA%B5%AC%20(%EA%B4%80%EC%A0%80%EA%B6%8C%EC%97%AD)'),decodeURIComponent('%EB%8F%99%EB%B0%A9%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90'))">삭제</button>
         </div></td>
       </tr><tr>
-        <td>한광여자고등학교</td>
-        <td class="r"><b>342</b></td><td class="r"><b>335</b></td><td class="r"><b>344</b></td>
+        <td>도안고등학교</td>
+        <td class="r"><b>321</b></td><td class="r"><b>296</b></td><td class="r"><b>299</b></td>
         <td><span class="sdot dot-ok"></span><span style="color:#16a34a;font-size:11px">완료</span></td>
         <td><div class="act-cell">
-          <button class="btn btn-edit" onclick="openEdit(decodeURIComponent('%ED%8F%89%ED%83%9D%EC%8B%9C'),decodeURIComponent('%ED%95%9C%EA%B4%91%EC%97%AC%EC%9E%90%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90'))">수정</button>
-          <button class="btn btn-del" onclick="deleteSchool(decodeURIComponent('%ED%8F%89%ED%83%9D%EC%8B%9C'),decodeURIComponent('%ED%95%9C%EA%B4%91%EC%97%AC%EC%9E%90%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90'))">삭제</button>
+          <button class="btn btn-edit" onclick="openEdit(decodeURIComponent('%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%84%9C%EA%B5%AC%20(%EA%B4%80%EC%A0%80%EA%B6%8C%EC%97%AD)'),decodeURIComponent('%EB%8F%84%EC%95%88%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90'))">수정</button>
+          <button class="btn btn-del" onclick="deleteSchool(decodeURIComponent('%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%84%9C%EA%B5%AC%20(%EA%B4%80%EC%A0%80%EA%B6%8C%EC%97%AD)'),decodeURIComponent('%EB%8F%84%EC%95%88%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90'))">삭제</button>
         </div></td>
       </tr><tr>
-        <td>한광고등학교</td>
-        <td class="r"><b>315</b></td><td class="r"><b>317</b></td><td class="r"><b>316</b></td>
+        <td>만년고등학교</td>
+        <td class="r"><b>207</b></td><td class="r"><b>189</b></td><td class="r"><b>215</b></td>
         <td><span class="sdot dot-ok"></span><span style="color:#16a34a;font-size:11px">완료</span></td>
         <td><div class="act-cell">
-          <button class="btn btn-edit" onclick="openEdit(decodeURIComponent('%ED%8F%89%ED%83%9D%EC%8B%9C'),decodeURIComponent('%ED%95%9C%EA%B4%91%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90'))">수정</button>
-          <button class="btn btn-del" onclick="deleteSchool(decodeURIComponent('%ED%8F%89%ED%83%9D%EC%8B%9C'),decodeURIComponent('%ED%95%9C%EA%B4%91%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90'))">삭제</button>
+          <button class="btn btn-edit" onclick="openEdit(decodeURIComponent('%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%84%9C%EA%B5%AC%20(%EA%B4%80%EC%A0%80%EA%B6%8C%EC%97%AD)'),decodeURIComponent('%EB%A7%8C%EB%85%84%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90'))">수정</button>
+          <button class="btn btn-del" onclick="deleteSchool(decodeURIComponent('%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%84%9C%EA%B5%AC%20(%EA%B4%80%EC%A0%80%EA%B6%8C%EC%97%AD)'),decodeURIComponent('%EB%A7%8C%EB%85%84%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90'))">삭제</button>
         </div></td>
       </tr><tr>
-        <td>용죽고등학교</td>
-        <td class="r"><b>386</b></td><td class="r"><span style="color:#ccc">—</span></td><td class="r"><span style="color:#ccc">—</span></td>
-        <td><span class="sdot dot-no"></span><span style="color:#d97706;font-size:11px">미입력</span></td>
-        <td><div class="act-cell">
-          <button class="btn btn-edit" onclick="openEdit(decodeURIComponent('%ED%8F%89%ED%83%9D%EC%8B%9C'),decodeURIComponent('%EC%9A%A9%EC%A3%BD%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90'))">수정</button>
-          <button class="btn btn-del" onclick="deleteSchool(decodeURIComponent('%ED%8F%89%ED%83%9D%EC%8B%9C'),decodeURIComponent('%EC%9A%A9%EC%A3%BD%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90'))">삭제</button>
-        </div></td>
-      </tr><tr>
-        <td>평택여자고등학교</td>
-        <td class="r"><b>346</b></td><td class="r"><b>330</b></td><td class="r"><b>350</b></td>
+        <td>대덕고등학교</td>
+        <td class="r"><b>170</b></td><td class="r"><b>152</b></td><td class="r"><b>189</b></td>
         <td><span class="sdot dot-ok"></span><span style="color:#16a34a;font-size:11px">완료</span></td>
         <td><div class="act-cell">
-          <button class="btn btn-edit" onclick="openEdit(decodeURIComponent('%ED%8F%89%ED%83%9D%EC%8B%9C'),decodeURIComponent('%ED%8F%89%ED%83%9D%EC%97%AC%EC%9E%90%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90'))">수정</button>
-          <button class="btn btn-del" onclick="deleteSchool(decodeURIComponent('%ED%8F%89%ED%83%9D%EC%8B%9C'),decodeURIComponent('%ED%8F%89%ED%83%9D%EC%97%AC%EC%9E%90%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90'))">삭제</button>
-        </div></td>
-      </tr><tr>
-        <td>송탄고등학교</td>
-        <td class="r"><b>313</b></td><td class="r"><b>263</b></td><td class="r"><b>139</b></td>
-        <td><span class="sdot dot-ok"></span><span style="color:#16a34a;font-size:11px">완료</span></td>
-        <td><div class="act-cell">
-          <button class="btn btn-edit" onclick="openEdit(decodeURIComponent('%ED%8F%89%ED%83%9D%EC%8B%9C'),decodeURIComponent('%EC%86%A1%ED%83%84%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90'))">수정</button>
-          <button class="btn btn-del" onclick="deleteSchool(decodeURIComponent('%ED%8F%89%ED%83%9D%EC%8B%9C'),decodeURIComponent('%EC%86%A1%ED%83%84%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90'))">삭제</button>
-        </div></td>
-      </tr><tr>
-        <td>라온고등학교</td>
-        <td class="r"><b>249</b></td><td class="r"><b>236</b></td><td class="r"><b>239</b></td>
-        <td><span class="sdot dot-ok"></span><span style="color:#16a34a;font-size:11px">완료</span></td>
-        <td><div class="act-cell">
-          <button class="btn btn-edit" onclick="openEdit(decodeURIComponent('%ED%8F%89%ED%83%9D%EC%8B%9C'),decodeURIComponent('%EB%9D%BC%EC%98%A8%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90'))">수정</button>
-          <button class="btn btn-del" onclick="deleteSchool(decodeURIComponent('%ED%8F%89%ED%83%9D%EC%8B%9C'),decodeURIComponent('%EB%9D%BC%EC%98%A8%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90'))">삭제</button>
-        </div></td>
-      </tr><tr>
-        <td>효명고등학교</td>
-        <td class="r"><b>315</b></td><td class="r"><b>323</b></td><td class="r"><b>324</b></td>
-        <td><span class="sdot dot-ok"></span><span style="color:#16a34a;font-size:11px">완료</span></td>
-        <td><div class="act-cell">
-          <button class="btn btn-edit" onclick="openEdit(decodeURIComponent('%ED%8F%89%ED%83%9D%EC%8B%9C'),decodeURIComponent('%ED%9A%A8%EB%AA%85%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90'))">수정</button>
-          <button class="btn btn-del" onclick="deleteSchool(decodeURIComponent('%ED%8F%89%ED%83%9D%EC%8B%9C'),decodeURIComponent('%ED%9A%A8%EB%AA%85%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90'))">삭제</button>
-        </div></td>
-      </tr><tr>
-        <td>신한고등학교</td>
-        <td class="r"><b>313</b></td><td class="r"><b>315</b></td><td class="r"><b>317</b></td>
-        <td><span class="sdot dot-ok"></span><span style="color:#16a34a;font-size:11px">완료</span></td>
-        <td><div class="act-cell">
-          <button class="btn btn-edit" onclick="openEdit(decodeURIComponent('%ED%8F%89%ED%83%9D%EC%8B%9C'),decodeURIComponent('%EC%8B%A0%ED%95%9C%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90'))">수정</button>
-          <button class="btn btn-del" onclick="deleteSchool(decodeURIComponent('%ED%8F%89%ED%83%9D%EC%8B%9C'),decodeURIComponent('%EC%8B%A0%ED%95%9C%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90'))">삭제</button>
-        </div></td>
-      </tr><tr>
-        <td>이충고등학교</td>
-        <td class="r"><b>314</b></td><td class="r"><b>305</b></td><td class="r"><b>309</b></td>
-        <td><span class="sdot dot-ok"></span><span style="color:#16a34a;font-size:11px">완료</span></td>
-        <td><div class="act-cell">
-          <button class="btn btn-edit" onclick="openEdit(decodeURIComponent('%ED%8F%89%ED%83%9D%EC%8B%9C'),decodeURIComponent('%EC%9D%B4%EC%B6%A9%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90'))">수정</button>
-          <button class="btn btn-del" onclick="deleteSchool(decodeURIComponent('%ED%8F%89%ED%83%9D%EC%8B%9C'),decodeURIComponent('%EC%9D%B4%EC%B6%A9%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90'))">삭제</button>
-        </div></td>
-      </tr><tr>
-        <td>은혜고등학교</td>
-        <td class="r"><b>310</b></td><td class="r"><b>313</b></td><td class="r"><b>295</b></td>
-        <td><span class="sdot dot-ok"></span><span style="color:#16a34a;font-size:11px">완료</span></td>
-        <td><div class="act-cell">
-          <button class="btn btn-edit" onclick="openEdit(decodeURIComponent('%ED%8F%89%ED%83%9D%EC%8B%9C'),decodeURIComponent('%EC%9D%80%ED%98%9C%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90'))">수정</button>
-          <button class="btn btn-del" onclick="deleteSchool(decodeURIComponent('%ED%8F%89%ED%83%9D%EC%8B%9C'),decodeURIComponent('%EC%9D%80%ED%98%9C%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90'))">삭제</button>
-        </div></td>
-      </tr><tr>
-        <td>태광고등학교</td>
-        <td class="r"><b>310</b></td><td class="r"><b>296</b></td><td class="r"><b>279</b></td>
-        <td><span class="sdot dot-ok"></span><span style="color:#16a34a;font-size:11px">완료</span></td>
-        <td><div class="act-cell">
-          <button class="btn btn-edit" onclick="openEdit(decodeURIComponent('%ED%8F%89%ED%83%9D%EC%8B%9C'),decodeURIComponent('%ED%83%9C%EA%B4%91%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90'))">수정</button>
-          <button class="btn btn-del" onclick="deleteSchool(decodeURIComponent('%ED%8F%89%ED%83%9D%EC%8B%9C'),decodeURIComponent('%ED%83%9C%EA%B4%91%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90'))">삭제</button>
-        </div></td>
-      </tr><tr>
-        <td>청담고등학교</td>
-        <td class="r"><b>207</b></td><td class="r"><b>177</b></td><td class="r"><b>164</b></td>
-        <td><span class="sdot dot-ok"></span><span style="color:#16a34a;font-size:11px">완료</span></td>
-        <td><div class="act-cell">
-          <button class="btn btn-edit" onclick="openEdit(decodeURIComponent('%ED%8F%89%ED%83%9D%EC%8B%9C'),decodeURIComponent('%EC%B2%AD%EB%8B%B4%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90'))">수정</button>
-          <button class="btn btn-del" onclick="deleteSchool(decodeURIComponent('%ED%8F%89%ED%83%9D%EC%8B%9C'),decodeURIComponent('%EC%B2%AD%EB%8B%B4%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90'))">삭제</button>
-        </div></td>
-      </tr><tr>
-        <td>청북고등학교</td>
-        <td class="r"><b>313</b></td><td class="r"><b>314</b></td><td class="r"><b>319</b></td>
-        <td><span class="sdot dot-ok"></span><span style="color:#16a34a;font-size:11px">완료</span></td>
-        <td><div class="act-cell">
-          <button class="btn btn-edit" onclick="openEdit(decodeURIComponent('%ED%8F%89%ED%83%9D%EC%8B%9C'),decodeURIComponent('%EC%B2%AD%EB%B6%81%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90'))">수정</button>
-          <button class="btn btn-del" onclick="deleteSchool(decodeURIComponent('%ED%8F%89%ED%83%9D%EC%8B%9C'),decodeURIComponent('%EC%B2%AD%EB%B6%81%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90'))">삭제</button>
-        </div></td>
-      </tr><tr>
-        <td>현화고등학교</td>
-        <td class="r"><b>313</b></td><td class="r"><b>318</b></td><td class="r"><b>327</b></td>
-        <td><span class="sdot dot-ok"></span><span style="color:#16a34a;font-size:11px">완료</span></td>
-        <td><div class="act-cell">
-          <button class="btn btn-edit" onclick="openEdit(decodeURIComponent('%ED%8F%89%ED%83%9D%EC%8B%9C'),decodeURIComponent('%ED%98%84%ED%99%94%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90'))">수정</button>
-          <button class="btn btn-del" onclick="deleteSchool(decodeURIComponent('%ED%8F%89%ED%83%9D%EC%8B%9C'),decodeURIComponent('%ED%98%84%ED%99%94%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90'))">삭제</button>
-        </div></td>
-      </tr><tr>
-        <td>안중고등학교</td>
-        <td class="r"><b>174</b></td><td class="r"><b>129</b></td><td class="r"><b>143</b></td>
-        <td><span class="sdot dot-ok"></span><span style="color:#16a34a;font-size:11px">완료</span></td>
-        <td><div class="act-cell">
-          <button class="btn btn-edit" onclick="openEdit(decodeURIComponent('%ED%8F%89%ED%83%9D%EC%8B%9C'),decodeURIComponent('%EC%95%88%EC%A4%91%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90'))">수정</button>
-          <button class="btn btn-del" onclick="deleteSchool(decodeURIComponent('%ED%8F%89%ED%83%9D%EC%8B%9C'),decodeURIComponent('%EC%95%88%EC%A4%91%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90'))">삭제</button>
-        </div></td>
-      </tr><tr>
-        <td>진위고등학교</td>
-        <td class="r"><b>205</b></td><td class="r"><b>159</b></td><td class="r"><b>162</b></td>
-        <td><span class="sdot dot-ok"></span><span style="color:#16a34a;font-size:11px">완료</span></td>
-        <td><div class="act-cell">
-          <button class="btn btn-edit" onclick="openEdit(decodeURIComponent('%ED%8F%89%ED%83%9D%EC%8B%9C'),decodeURIComponent('%EC%A7%84%EC%9C%84%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90'))">수정</button>
-          <button class="btn btn-del" onclick="deleteSchool(decodeURIComponent('%ED%8F%89%ED%83%9D%EC%8B%9C'),decodeURIComponent('%EC%A7%84%EC%9C%84%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90'))">삭제</button>
+          <button class="btn btn-edit" onclick="openEdit(decodeURIComponent('%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%84%9C%EA%B5%AC%20(%EA%B4%80%EC%A0%80%EA%B6%8C%EC%97%AD)'),decodeURIComponent('%EB%8C%80%EB%8D%95%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90'))">수정</button>
+          <button class="btn btn-del" onclick="deleteSchool(decodeURIComponent('%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%84%9C%EA%B5%AC%20(%EA%B4%80%EC%A0%80%EA%B6%8C%EC%97%AD)'),decodeURIComponent('%EB%8C%80%EB%8D%95%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90'))">삭제</button>
         </div></td>
       </tr></tbody>
       </table>
@@ -514,25 +410,12 @@
 /* ========== DATA ========== */
 /* %%DB_START%% */
 const DB = {
-  평택시: [
-    { n:"평택고등학교", sx:"공", g:{1:308,2:292,3:305} },
-    { n:"비전고등학교", sx:"공", g:{1:323,2:321,3:323} },
-    { n:"한광여자고등학교", sx:"공", g:{1:342,2:335,3:344} },
-    { n:"한광고등학교", sx:"공", g:{1:315,2:317,3:316} },
-    { n:"용죽고등학교", sx:"공", g:{1:386,2:0,3:0} },
-    { n:"평택여자고등학교", sx:"공", g:{1:346,2:330,3:350} },
-    { n:"송탄고등학교", sx:"공", g:{1:313,2:263,3:139} },
-    { n:"라온고등학교", sx:"공", g:{1:249,2:236,3:239} },
-    { n:"효명고등학교", sx:"공", g:{1:315,2:323,3:324} },
-    { n:"신한고등학교", sx:"공", g:{1:313,2:315,3:317} },
-    { n:"이충고등학교", sx:"공", g:{1:314,2:305,3:309} },
-    { n:"은혜고등학교", sx:"공", g:{1:310,2:313,3:295} },
-    { n:"태광고등학교", sx:"공", g:{1:310,2:296,3:279} },
-    { n:"청담고등학교", sx:"공", g:{1:207,2:177,3:164} },
-    { n:"청북고등학교", sx:"공", g:{1:313,2:314,3:319} },
-    { n:"현화고등학교", sx:"공", g:{1:313,2:318,3:327} },
-    { n:"안중고등학교", sx:"공", g:{1:174,2:129,3:143} },
-    { n:"진위고등학교", sx:"공", g:{1:205,2:159,3:162} },
+  대전광역시 서구 (관저권역): [
+    { n:"관저고등학교", sx:"공", g:{1:232,2:213,3:226} },
+    { n:"동방고등학교", sx:"공", g:{1:262,2:242,3:259} },
+    { n:"도안고등학교", sx:"공", g:{1:321,2:296,3:299} },
+    { n:"만년고등학교", sx:"공", g:{1:207,2:189,3:215} },
+    { n:"대덕고등학교", sx:"공", g:{1:170,2:152,3:189} },
   ],
 };
 /* %%DB_END%% */
